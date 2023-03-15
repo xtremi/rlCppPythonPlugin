@@ -28,15 +28,15 @@ Remarks:
 `rlCppPythonPlugin.py` imports functions from the above mentioned plugins
 and test their perfomance.
 
-Example results with N = 50e6:
+Example results with `N = 50e6`:
 
-| Method                        | Time [S]      |
-| ----------------------------- | ------------- |
-| N calls to Python tanh        | `21.911s`     |
-| N calls to CPython tanh       | ` 5.096s`     |
-| N calls to PyBind11 tanh      | `15.088s`     |
-| CPython calling tanh N times  | `0.512`       |
-| PyBind11 calling tanh N times | `0.524`       |
+| Method                          | Time [S]      |
+| ------------------------------- | ------------- |
+| `N` calls to Python tanh        | `21.911s`     |
+| `N` calls to CPython tanh       | ` 5.096s`     |
+| `N` calls to PyBind11 tanh      | `15.088s`     |
+| CPython calling tanh `N` times  | ` 0.512s`     |
+| PyBind11 calling tanh `N` times | ` 0.524s`     |
 
 
 PyBind11 simplifies the definitions of the functions and module to be 
